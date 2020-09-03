@@ -1,6 +1,15 @@
-import { test, assertEquals } from "./test_deps.ts";
-import { getHelloWorld } from "./mod.ts";
+import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
+import { getMoji } from "./mod.ts";
 
-test(function test_get_hello_world() {
-  assertEquals(getHelloWorld(), "\x1b[1mHello World\x1b[22m");
+const ValidateEmoji = (emoji: any) => {
+  if (emoji) {
+    return (true)
+  }
+  return (false)
+}
+
+Deno.test("test getMoji function", async (): Promise<void> => {
+  var data= await getMoji();
+  if(data.length > 0)
+   assertEquals(ValidateEmoji(data), true);
 });

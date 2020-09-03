@@ -6,16 +6,8 @@ interface Emoji {
   subgroup: string
 }
 
-const fetchData = async (): Promise<Emoji[]> => {
-  const data = await Deno.readFile("./emoji.json");
 
-  const decoder = new TextDecoder();
-  const decodedData = decoder.decode(data);
-
-  return JSON.parse(decodedData);
-};
-
-export const getMoji = async (): Promise<Emoji[]> => {
-    const emojiData = await fetchData();
+export const getMoji = async (): Promise<any> => {
+    const emojiData = await (await fetch(`https://raw.githubusercontent.com/anujsinghwd/getmoji/master/emoji.json`)).json();
     return emojiData;
 };
