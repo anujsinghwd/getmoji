@@ -1,4 +1,6 @@
-# 🦕 getmoji
+# getmoji
+
+![Deno](https://github.com/js-pugilist/getmoji/workflows/Deno/badge.svg?branch=master)
 
 [Deno](https://deno.land) module starter repository.
 
