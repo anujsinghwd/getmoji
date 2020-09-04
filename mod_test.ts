@@ -1,5 +1,5 @@
 import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
-import { getMoji } from "./mod.ts";
+import { getEmojiByName } from "./mod.ts";
 
 const ValidateEmoji = (emoji: any) => {
   if (emoji) {
@@ -9,7 +9,7 @@ const ValidateEmoji = (emoji: any) => {
 }
 
 Deno.test("test getMoji function", async (): Promise<void> => {
-  var data= await getMoji();
-  if(data.length > 0)
+  var data= await getEmojiByName("pizza");
+  if(data)
    assertEquals(ValidateEmoji(data), true);
 });

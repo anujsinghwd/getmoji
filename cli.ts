@@ -1,12 +1,12 @@
-import { getMoji } from "./mod.ts";
+import { getEmojiByName } from "./mod.ts";
 
 const cli = async () => {
-  var allEmojis =  await getMoji();
-  if(allEmojis.length > 0)
-    console.log(allEmojis)
+  var emojis =  await getEmojiByName("pizza");
+  if(emojis)
+    console.log(emojis)
   else{
     console.log("Here are all the emojis");
-    console.log(allEmojis)
+    console.log(emojis)
   }
 }
 

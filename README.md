@@ -1,25 +1,16 @@
-# 🦕 deno-getMoji
+# 🦕 getmoji
 
 [Deno](https://deno.land) module starter repository.
 
 ## Usage
 
 ```typescript
-    //WIP
+    import { getEmojiByName } from "https://deno.land/x/getmoji@1.0/mod.ts";
+
+    // returns the emoji 
+    getEmojiByName("pizza");
 ```
 
-## Test
-
-```bash
-# unit tests
-deno ./test.ts
-```
-
-## Format code
-
-```bash
-deno fmt **/*.ts
-```
 
 ## Resources
 
