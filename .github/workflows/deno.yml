@@ -23,16 +23,11 @@ jobs:
       - name: Setup Deno
         uses: denolib/setup-deno@c7d7968ad4a59c159a777f79adddad6872ee8d96
         with:
-          deno-version: ${{ matrix.deno }} # tests across multiple Deno versions
+          deno-version: ${{ matrix.deno }}
 
       - name: Fix Formatting
         run: deno fmt
 
       - name: test
         run: deno test --allow-net
-
-      - name: Coveralls GitHub Action
-        uses: coverallsapp/github-action@v1.1.1
-        with:
-          github-token: ${{ secrets.CODE_COVERGAE_TOKEN }}
       
