@@ -1,4 +1,4 @@
-interface Emoji {
+export interface Emoji {
     name: string,
     char: string,
 }
