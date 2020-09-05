@@ -1,12 +1,20 @@
-import { getEmojiByName } from "./mod.ts";
+import { getEmojiByName, emojify } from "./mod.ts";
 
 const cli = async () => {
-  var emojis =  await getEmojiByName("pizza");
+  let emojis =  await getEmojiByName("pizza");
   if(emojis)
     console.log(emojis)
   else{
-    console.log("Here are all the emojis");
+    console.log("Here are the emoji");
     console.log(emojis)
+  }
+
+  let emojiFy =  await emojify("i love $pizza");
+  if(emojiFy)
+    console.log(emojiFy)
+  else{
+    console.log("Here is the emoji");
+    console.log(emojiFy)
   }
 }
 
