@@ -2,7 +2,6 @@
 
 ![Deno](https://github.com/js-pugilist/getmoji/workflows/Deno/badge.svg?branch=master)
 
-[Deno](https://deno.land) module starter repository.
 
 ## Usage
 
@@ -13,7 +12,9 @@
 
     await emojify("i love $pizza") //returns i love 🍕
 ```
+## Code Coverage
 
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fanujsinghwd%2Fgetmoji.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fanujsinghwd%2Fgetmoji?ref=badge_large)
 
 ## Resources
 
