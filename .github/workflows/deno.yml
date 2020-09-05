@@ -1,6 +1,6 @@
 
 name: Deno
-
+github-token: ${{ secrets.CODE_COVERGAE_TOKEN }}
 on:
   push:
     branches: [master]
