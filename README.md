@@ -7,14 +7,11 @@
 ## Usage
 
 ```typescript
-    import { getEmojiByName, emojify } from "https://deno.land/x/getmoji@1.2.2/mod.ts";
+    import { getEmojiByName, emojify } from "https://deno.land/x/getmoji@1.2.4/mod.ts";
 
     await getEmojiByName("pizza"); //return 🍕
 
     await emojify("i love $pizza") //returns i love 🍕
-```
-```
-
 ```
 
 ## Resources
