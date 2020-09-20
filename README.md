@@ -13,6 +13,9 @@
 
     await emojify("i love $pizza") //returns i love 🍕
 ```
+```
+
+```
 
 ## Resources
 
