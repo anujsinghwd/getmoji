@@ -1,4 +1,4 @@
-import { emojiData, Emoji } from "./emojiData.ts"
+import { emojiData, Emoji } from "./emojiData.ts";
 
 const filterEmoji = (emojiName: string) => {
   return emojiData.filter(data => data.name === emojiName);
