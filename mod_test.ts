@@ -3,9 +3,9 @@ import { getEmojiByName, emojify } from "./mod.ts";
 
 const ValidateEmoji = (emoji: any) => {
   if (emoji) {
-    return (true)
+    return (true);
   }
-  return (false)
+  return (false);
 }
 
 Deno.test("test getEmojiByName function", async (): Promise<void> => {
