@@ -1,4 +1,4 @@
-import { emojiData, Emoji } from "./emojiData.ts";
+import { emojiData } from "./emojiData.ts";
 
 const filterEmoji = (emojiName: string) => {
   return emojiData.filter(data => data.name === emojiName);
@@ -11,9 +11,9 @@ export const getEmojiByName = (name: string) => {
 
 export const emojify = (inputString: string) => {
   const splittedStr = inputString.split(" ");
-  let newArr: any[] = splittedStr.map((str: string) => {
+  const newArr = splittedStr.map((str: string) => {
     if(str.includes("$"))
-      return filterEmoji(str.substr(1)).length ? filterEmoji(str.substr(1))[0].char : str;
+      return filterEmoji(str.substring(1)).length ? filterEmoji(str.substring(1))[0].char : str;
     return str;
   });
   return newArr.join(" ");
