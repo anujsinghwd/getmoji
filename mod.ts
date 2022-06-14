@@ -4,8 +4,8 @@ const filterEmoji = (emojiName: string) => {
   return emojiData.filter(data => data.name === emojiName);
 }
 
-export const getEmojiByName = async (name: string) => {
-  const filteredData = await filterEmoji(name);
+export const getEmojiByName = (name: string) => {
+  const filteredData = filterEmoji(name);
   return filteredData.length ? filteredData[0].char : "emoji not found";
 }
 
